@@ -56,7 +56,6 @@ fn main() {
                 cursor_pos = buffer.len();
                 println!("Insert mode activated.");
             }
-            ":h" => println!("Type :q to quit, :w to save, :wq to save and quit, :a to insert text at the end of the file."),
             _ => {
                 if input.starts_with(':') {
                     println!("Invalid command.");
